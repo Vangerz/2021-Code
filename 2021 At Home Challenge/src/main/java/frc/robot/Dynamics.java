@@ -1,7 +1,7 @@
 package frc.robot;
 
-public final class Dynamics{
-    //controller layout map -> this this makes it more simple to just access a controller button, and let the actual layout used be determined elsewhere
+public final class Dynamics extends Keybindings{
+    //controller layout map -> this makes simpler to just access a controller button, and let the actual layout used be determined elsewhere
     public static int controllerButton_A;
     public static int controllerButton_B;
     public static int controllerButton_X;
@@ -43,7 +43,7 @@ public final class Dynamics{
 
     public Dynamics(){
         setmode(Constants.controlmode);
-    } 
+    }
 
     // public void setdrivemode(int direction){
         
@@ -51,35 +51,35 @@ public final class Dynamics{
 
     public void setmode(String mode){
         if(mode.equals("xbox")){
-            controllerButton_A = Constants.x_controllerButton_A;
-            controllerButton_B = Constants.x_controllerButton_B;
-            controllerButton_X = Constants.x_controllerButton_X;
-            controllerButton_Y = Constants.x_controllerButton_Y;
-            controllerButton_menu = Constants.x_controllerButton_menu;
-            controllerButton_home = Constants.x_controllerButton_home;
-            controllerButton_lb = Constants.x_controllerButton_lb;
-            controllerButton_rb = Constants.x_controllerButton_rb;
-            controllerButton_ls = Constants.x_controllerButton_ls;
-            controllerButton_rs = Constants.x_controllerButton_rs;
-            controllerStick_ly = Constants.x_controllerStick_ly;
-            controllerStick_lx = Constants.x_controllerStick_lx;
-            controllerStick_ry = Constants.x_controllerStick_ry;
-            controllerStick_rx = Constants.x_controllerStick_rx;
-            controllerTrigger_l = Constants.x_controllerTrigger_l;
-            controllerTrigger_r = Constants.x_controllerTrigger_r;
+            controllerButton_A = Keybindings.x_controllerButton_A;
+            controllerButton_B = Keybindings.x_controllerButton_B;
+            controllerButton_X = Keybindings.x_controllerButton_X;
+            controllerButton_Y = Keybindings.x_controllerButton_Y;
+            controllerButton_menu = Keybindings.x_controllerButton_menu;
+            controllerButton_home = Keybindings.x_controllerButton_home;
+            controllerButton_lb = Keybindings.x_controllerButton_lb;
+            controllerButton_rb = Keybindings.x_controllerButton_rb;
+            controllerButton_ls = Keybindings.x_controllerButton_ls;
+            controllerButton_rs = Keybindings.x_controllerButton_rs;
+            controllerStick_ly = Keybindings.x_controllerStick_ly;
+            controllerStick_lx = Keybindings.x_controllerStick_lx;
+            controllerStick_ry = Keybindings.x_controllerStick_ry;
+            controllerStick_rx = Keybindings.x_controllerStick_rx;
+            controllerTrigger_l = Keybindings.x_controllerTrigger_l;
+            controllerTrigger_r = Keybindings.x_controllerTrigger_r;
           }else if(mode.equals("logitech")){
-            controllerButton_A = Constants.l_controllerButton_A;
-            controllerButton_B = Constants.l_controllerButton_B;
-            controllerButton_X = Constants.l_controllerButton_X;
-            controllerButton_Y = Constants.l_controllerButton_Y;
-            controllerButton_menu = Constants.l_controllerButton_menu;
-            controllerButton_home = Constants.l_controllerButton_home;
-            controllerStick_ly = Constants.l_controllerStick_ly;
-            controllerStick_lx = Constants.l_controllerStick_lx;
-            controllerStick_ry = Constants.l_controllerStick_ry;
-            controllerStick_rx = Constants.l_controllerStick_rx;
-            controllerTrigger_l = Constants.l_controllerTrigger_l;
-            controllerTrigger_r = Constants.l_controllerTrigger_r;
+            controllerButton_A = Keybindings.l_controllerButton_A;
+            controllerButton_B = Keybindings.l_controllerButton_B;
+            controllerButton_X = Keybindings.l_controllerButton_X;
+            controllerButton_Y = Keybindings.l_controllerButton_Y;
+            controllerButton_menu = Keybindings.l_controllerButton_menu;
+            controllerButton_home = Keybindings.l_controllerButton_home;
+            controllerStick_ly = Keybindings.l_controllerStick_ly;
+            controllerStick_lx = Keybindings.l_controllerStick_lx;
+            controllerStick_ry = Keybindings.l_controllerStick_ry;
+            controllerStick_rx = Keybindings.l_controllerStick_rx;
+            controllerTrigger_l = Keybindings.l_controllerTrigger_l;
+            controllerTrigger_r = Keybindings.l_controllerTrigger_r;
           }
     }
 }
